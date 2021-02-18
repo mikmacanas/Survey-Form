@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center"><strong>Relationship Survey Form</strong></h1>
+    <p id="description" class="description text-center">
+      Thank you for taking part of our survey!
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+
+    <div class="form-group">
+      <label id="love-label" for="email">Have you ever felt inlove before?</label>
+      <input
+        type="text"
+        name="love"
+        id="love"
+        class="form-control"
+        placeholder="Answer"
+        required
+      />
+
+    <div class="form-group">
+      <p>Gender</p>
+      <select id="dropdown" name="gender" class="form-control" required>
+        <option disabled selected value>Select your gender</option>
+        <option value="student">Female</option>
+        <option value="student">Male</option>
+        <option value="student">Bisexual</option>
+        <option value="student">Trasnwoman</option>
+        <option value="student">Transman</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your relationship status?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Single</option>
+        <option value="projects">Married</option>
+        <option value="community">Widowed</option>
+        <option value="openSource">Divorced</option>
+        <option value="openSource">Separated</option>
+        <option value="openSource">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What are the important aspects you value when starting to fall in love?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="physical-connection"
+          type="checkbox"
+          class="input-checkbox"
+        />Physical Connection</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="friendhsip"
+          type="checkbox"
+          class="input-checkbox"
+        />Friendship</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Honesty"
+          type="checkbox"
+          class="input-checkbox"
+        />Honesty</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Friendliness"
+          type="checkbox"
+          class="input-checkbox"
+        />Friendliness</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="personal-space"
+          type="checkbox"
+          class="input-checkbox"
+        />Personal Space</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="communication"
+          type="checkbox"
+          class="input-checkbox"
+        />Communication</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="loyalty"
+          type="checkbox"
+          class="input-checkbox"
+        />Loyalty</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="career"
+          type="checkbox"
+          class="input-checkbox"
+        />Career</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="family-background"
+          type="checkbox"
+          class="input-checkbox"
+        />Family Background</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="attainments-of-each-other"
+          type="checkbox"
+          class="input-checkbox"
+        />Attainments of each Other</label
+      >
+    <div class="form-group">
+      <p>Other aspects that affects you?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Kindly place that aspect here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
